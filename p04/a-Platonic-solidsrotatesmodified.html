@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script> 
+  </head>
+  <body>
+    
+    <a-scene>
+
+      <a-box position="-4 1 -5"
+             color="green"
+             animation="property: rotation; to: 0 360 0; loop: true; dur: 4000">
+      </a-box>
+
+      <a-entity position="-2 1 -5"
+                geometry="primitive: tetrahedron; radius: 1"
+                material="color: red"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 4000">
+      </a-entity>
+
+      <a-entity position="0 1 -5"
+                geometry="primitive: dodecahedron; radius: 1"
+                material="color: blue"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 4000">
+      </a-entity>
+
+      <a-entity position="2 1 -5"
+                geometry="primitive: octahedron; radius: 1"
+                material="color: yellow"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 4000">
+      </a-entity>
+
+      <a-entity position="4 1 -5"
+                geometry="primitive: icosahedron; radius: 1"
+                material="color: purple"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 4000">
+      </a-entity>
+
+    </a-scene>
+
+  </body>
+</html>
